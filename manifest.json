@@ -1,0 +1,25 @@
+{
+    "name": "SUMit",
+    "description": "Our Summarize & Question Extension offers a dynamic solution for digesting lengthy texts effortlessly. Users can input any text, and the extension generates concise summaries, distilling the core ideas effectively. What sets us apart is the integration of related questions. After reading the summary, users encounter thought-provoking questions derived from the text, enhancing comprehension and retention. This interactive approach transforms passive reading into active engagement, making learning more enjoyable and efficient. With a user-friendly interface and customizable options, our extension caters to diverse needs, from students tackling study materials to professionals seeking quick insights. Experience the power of summarization coupled with engaging questions, revolutionizing the way you absorb information.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "icon": {
+        "16": "images/icon-16.png",
+        "32": "images/icon-32.png",
+        "48": "images/icon-48.png",
+        "128": "images/icon-128.png"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "scripts/content.js"
+            ],
+            "css": [
+                "scripts/content.css"
+            ],
+            "matches": [
+                "*://*/*"
+            ]
+        }
+    ]
+}
